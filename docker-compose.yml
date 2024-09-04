@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8081:3000"
+    volumes:
+      - .:/usr/src/app
+    restart: always
